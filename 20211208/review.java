@@ -18,18 +18,23 @@ public class Main{
     System.out.println(a/b);
     System.out.println(a%b);
 
+/*배열 설정*/
   String[] day={"월","화","수","목","금","토","일"};
   for(int i=0;i<7;i++){
     System.out.println(day[i]);
   }
   String d="My name is Hayun";
   System.out.println(d.indexOf("is"));
+
+
   //문자열 시작 위치 인덱스 알려줌
   System.out.println(d.replaceAll("hayun","eomhayun"));
   System.out.println(d.substring(0,5));
   System.out.println(d.toUpperCase());
   System.out.println(d.toLowerCase());
-  
+
+
+  /*리스트 설정하기*/
   ArrayList array=new ArrayList();
   array.add("hi");
   array.add("hello");
@@ -43,6 +48,8 @@ public class Main{
   System.out.println(array.remove(1));
   System.out.println(array.remove("hi"));
   System.out.println(array);
+
+  /*리스트에 문자열만 넣을 수 있게 지정*/
   ArrayList<String> arr=new ArrayList<String>();
   arr.add("hayun");
   arr.add("eom");
